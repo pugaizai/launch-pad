@@ -10,11 +10,11 @@ license = "MPL-2.0"
 [dependencies]
 log = "0.4"
 slotmap = "1"
-thiserror = "1"
+thiserror = "2"
 tokio = { version = "1", features = ["process", "sync", "rt", "macros", "io-util", "time"] }
 tokio-util = "0.7"
 rand = "0.8"
-nix = "0.26"
+nix = { version = "0.29", features = ["process", "signal", "fs"] }
 sync_wrapper = "1.0.1"
 
 [dev-dependencies]
